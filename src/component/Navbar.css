@@ -1,0 +1,72 @@
+/* Navbar.css */
+
+.navbar-fixed {
+    position:fixed;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    background-color: #FFF7EA;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* align-items:center; */
+        /* display:flex; */
+    /* justify-content: space-between; */
+    /* justify-items: center; */
+    
+}
+
+.container01 {
+    max-width: 140rem;
+    padding: 30px 2.4rem;
+    display: flex;
+    /* align-items:center; */
+    justify-content: space-between;
+    margin: 0 auto;
+    font-size:2.5vh;
+    font-weight: bold;
+    /* font-family:Georgia, 'Times New Roman', Times, serif;     */
+
+}
+
+ul {
+    display: flex;
+    gap: 3.2rem;
+    /* margin-left: 50%; */
+    /* align-items: center; */
+    /* justify-content: end; */
+}
+
+/* Add underline effect and highlight animation */
+li {
+    list-style: none;
+
+}
+
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    color: #562500; /* Change the color to match your design */
+    transition: color 0.3s;
+    align-items: center;
+}
+
+.nav-link:hover {
+    color: #ff5722; /* Change to the desired highlight color on hover */
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px; /* Adjust the position of the underline */
+    left: 0;
+    width: 0; /* Initially no width */
+    height: 2px; /* Height of the underline */
+    background-color: transparent; /* Initially transparent */
+    transition: width 0.3s; /* Add transition for smooth animation */
+}
+
+.nav-link:hover::after {
+    width: 100%; /* Full width on hover */
+    background-color: #ff5722; /* Change to the desired underline color on hover */
+}

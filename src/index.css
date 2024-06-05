@@ -1,0 +1,342 @@
+  *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    --btn-color:rgb(255, 151, 87);
+    /* background-color: antiquewhite; */
+    --bg-color:rgb(255, 156, 74);
+  }
+  a{
+    color: rgb(67, 36, 2);
+  }
+  a:hover{
+    color: #f86b00;
+  }
+
+  html{
+    font-size: 62.5%;
+  }
+  /* section{
+    height: 100vh;
+    width: 100%;
+
+  } */
+  .container-home{
+    /* margin-top: 80px; */
+  text-align: center;
+  margin: 30px;
+  /* line-height: 80px; */
+  color: rgb(252, 82, 9);
+  font-size: 30px; 
+  }
+  .h1wan{
+    padding: 65px 30px 20px 30px;
+    font-style:italic;
+    font-size: 8vh;
+
+    /* font-weight:700; */
+  }
+  .left01{
+  /* flex: 0 0 30%; */
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url('image/homebg1.jpg');
+  background-size:cover;
+  background-position:center;
+  }
+
+
+  /* about page */
+  .aboutHome{
+    /* position: absolute; */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* padding-right: 12vh; */
+    padding-right: 14vh;
+    padding-top: 12vh;
+    
+    /* margin: 80px; */
+  } 
+  .homebg2{
+    background-image: url('image/homebg2.jpg');
+  height: 100vh;
+  width: 100%;
+  background-size:cover;
+    background-position:center;
+  }
+  .content { 
+    border-radius: 30px;
+    /* box-shadow: 5px 5px 5px hsl(0, 0%, 80%); */
+    width: 78vh;
+    height: 80vh;
+    padding: 60px;
+    margin: auto;
+    text-align: center;
+    font-size: 2.3vh;
+    padding-top:100px;
+    /* margin-top:90px ; */
+  line-height: 30px;
+    background-color: #FFF7EA;
+    color: rgb(255, 94, 0);
+    transition: box-shadow 0.5s ease, height 0.5s ease, width 0.5s ease;
+  }
+  .content:hover {
+  height:84vh;
+    width:78vh;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  .weddingring{
+    height: 50vh;
+    width: 50vh;
+    border-radius: 100%;
+    margin: auto;
+    transition: box-shadow 0.5s ease, height 0.5s ease, width 0.5s ease;
+    opacity: 0.8;
+  }
+  .weddingring:hover{
+    border-radius: 100%;
+  height: 55vh;
+  width: 55vh;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  opacity: 0.9;
+  }
+
+  .ourMission{
+    font-size: 60px; 
+  }
+  .about-para{
+    line-height: 4.5vh;
+  }
+
+  .margintop{
+    margin-top: 3vh;
+  }
+
+  /* services */
+  .service-section{
+    height: 100vh;
+    width:100%;
+    background-image:url('image/homebg2.jpg');
+    background-size:cover;
+    background-position:center;
+    display: flex;
+    flex-wrap:wrap;
+    padding-left: 13vh;
+    padding-right: 13vh;
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+  }
+  .serviceHeading {
+    font-size: 15vh;
+    font-weight: bold;
+    color: rgb(163, 74, 0);
+    text-decoration: none;
+    /* transition: text-decoration 0.5s ease, height 0.5s ease, width 0.5s ease; */
+    position: relative;
+  }
+  .serviceHeading::before{
+    content:'';
+    top: 15vh;
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: rgb(163, 74, 0);
+    transition: width 1s ease;
+  }
+  .serviceHeading:hover::before{
+  /* text-decoration:underline; */
+  width:100%;
+  }
+  .servicesContainer{
+    margin: auto;
+    padding: 0vh 9vh 5vh 9vh;
+    
+    background-color: #fff7eaaf;
+    border-radius: 12px;
+  }
+  .verificationH{
+    font-size:4vh;
+    color: rgb(158, 105, 82);
+    padding-top: 35px;
+    font-weight: bold;
+    transition: 0.5s;
+  }
+  .verificationH:hover{
+    font-size: 5vh;
+    
+  }
+  .verificationP{
+    padding-top: 4px;
+    font-size: 2.4vh;
+    font-weight: bold;
+    transition: 0.5s;
+    color: rgb(189, 117, 65);
+  }
+  .verificationP:hover{
+  font-size: 2.8vh;
+  }
+  
+  /* contact us */
+  .contactSec{
+    /* padding: 5%; */
+    height: 100vh;
+    width:100%;
+    background-image:url('image/homebg2.jpg');
+    background-size:cover;
+    /* background-position:  ; */
+    display:flex;
+    flex-wrap:wrap;
+  }
+
+  .h1contact{
+    font-size: 9vh;
+    
+    color: rgb(114, 63, 0) ;
+  }
+
+    .contactIMG{
+      opacity: 90%;
+      background-image:  url('image/360_F_56332153_LSLzb5CVPXMUtIHrzkCUhpuZ2K5wSBEd.jpg');
+      background-size: cover;
+      height: 100%;
+      width:40%;
+    }
+    .contactIMG:hover {
+      opacity: 100%;
+    }
+    .infocontact{
+      padding-top: 7%;
+      padding-left: 5%;
+      font-size:3vh;
+      font-weight: bolder;
+      color: rgb(163, 60, 12);
+    }
+
+  /* Registeration */
+
+  .main{
+    display:flex;
+    align-items:center ;
+    justify-content:space-between;
+    background-image:url('image/homebg2.jpg');
+    background-size:cover;
+    height: 100vh;
+    width: 100%;
+    background-position:center;
+    position: absolute;
+  }
+  .grid {
+    display: grid;
+    /* gap: 6.2rem; */
+    align-items:center;
+    & img{
+      width: 100%;
+      height: auto;
+    }
+  }
+  .grid-two-cols{
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+    gap: 5rem;
+    
+    /* align-items: center; */
+  }  
+
+  button{
+    padding: 1rem 2.2rem;
+    font-size: 1.7rem;
+    font-weight: 500;
+    background-color:var(--btn-color);
+    border-color: rgb(255, 199, 156);
+    border-radius: 0.8rem;
+    cursor: pointer;
+    letter-spacing: 0.1rem;
+    transition: border-color 0.3s;
+  }
+  button:hover{
+    box-shadow: inset 0 0 0 0.2rem var(--bg-color);
+    border-color: var(--btn-color); 
+    border: 0.2rem solid #f86b00;
+  } 
+
+  .section-registeration{
+    max-width: 140rem;
+    padding: 4rem 2.4rem;
+    /* margin: 0 auto; */
+    margin: 5rem auto;
+    display: flex;
+    /* grid-template-columns: repeat(2,1fr); */
+    /* gap: 2rem; */
+    /* grid-template-columns: repeat(auto-fill, minmax(49%, 1fr));  */
+    /* Adjust column width as needed */
+    /* max-height: 100vh - 1vh; */
+    /* grid-template-columns: auto ; */
+    /* grid-gap: 2rem; */
+    /* flex-direction:column-reverse; */
+    /* justify-content:baseline; */
+    /* align-items: center; */
+    font-size:2rem;
+    color: #994709;
+
+    & label{
+    display:block;
+    margin-bottom: 0.5rem;
+    /* font-size: 2.5rem; */
+    font-weight: bold;
+    }
+
+    & input{
+      margin:0.5rem 0;
+      padding: 0.5rem;
+      width: 100%;
+      border-color:rgb(255, 102, 0);
+      border-width: 3px;
+      background: #f9e3cac2;
+    }
+
+  input[type="range"] {
+    -webkit-appearance: none;
+    width: calc(100%-50%);
+    height: 10px;
+    background: #db8f61;
+    border-radius: 5px;
+    outline:none;
+    margin: 5px 0;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #3f6541; 
+    /* Change this to your desired slider thumb color */
+    border-radius: 50%;
+    cursor: pointer;
+  }
+    & select{
+      margin: 0.5rem 0;
+      padding: 0.5rem;
+      width: 100%;
+      border-color:rgb(255, 102, 0);
+      border-width: 3px;
+      background: #f9e3cac2;
+
+      /* padding-right: 50%; */
+    }
+
+  }
+  .btn01{
+    width: 100%;
+    border-radius: 2;
+  }
+
+
